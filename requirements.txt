@@ -1,0 +1,14 @@
+Django==2.0.7
+djangorestframework==3.9.0
+factory-boy==2.11.1
+nose-parameterized==0.6.0
+raven==6.9.0
+psycopg2==2.7.6.1
+mock==2.0.0
+redis==2.10.6
+django-redis==4.10.0
+sentry-sdk==0.5.5
+celery==4.2.1
+django-environ==0.4.5
+django-cors-headers==2.4.0
+qiniu==7.1.0
