@@ -172,8 +172,8 @@ REST_FRAMEWORK = {
 
 # CORS
 CORS_ORIGIN_WHITELIST = (
-    '127.0.0.1:9000',
-    'localhost:9000'
+    'localhost:9000',
+    'story.arwen.space',
 )
 CORS_ALLOW_CREDENTIALS = True
 
