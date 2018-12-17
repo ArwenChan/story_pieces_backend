@@ -68,7 +68,6 @@ class VerifyCodeView(APIView):
     throttle_scope = None if settings.DEBUG else 'sms'
 
     def post(self, request, *args, **kwargs):
-        print('debug:', settings.DEBUG)
         phone_number = kwargs.get('phone')
         sms_client = SMSClient(phone_number)
         sms_type = request.query_params.get('type')

@@ -178,6 +178,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 CORS_ALLOW_CREDENTIALS = True
 
+
 from corsheaders.defaults import default_headers
 
 CORS_ALLOW_HEADERS = default_headers + (
@@ -186,6 +187,8 @@ CORS_ALLOW_HEADERS = default_headers + (
 
 SESSION_COOKIE_NAME = 'caocao'
 SESSION_COOKIE_AGE = 3600
+SESSION_COOKIE_DOMAIN = 'arwen.space'
+CSRF_COOKIE_DOMAIN = 'arwen.space'
 CSRF_HEADER_NAME = 'HTTP_ZHOUYU'
 CSRF_COOKIE_NAME = 'machao'
 
