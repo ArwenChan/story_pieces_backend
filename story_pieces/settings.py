@@ -36,6 +36,8 @@ env = environ.Env(
     QINIU_SECRET=(str, 'sP_80qwrnH4vfsNoxONMLCa8JBitTyGNcE6n6hLM'),
     QINIU_IMG_BUCKET=(str, 'story-pieces'),
     QINIU_IMG_DOMAIN=(str, 'http://pj5hr98xx.bkt.clouddn.com/'),
+    STATIC_ROOT=(str, 'staticfiles'),
+    STATIC_URL=(str, '/static/')
 
 )
 environ.Env.read_env()
@@ -150,7 +152,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
 
 # REST_FRAMEWORK
 REST_FRAMEWORK = {
@@ -242,6 +243,11 @@ sentry_sdk.init(
 )
 
 ignore_logger("record")
+
+# Static
+
+STATIC_ROOT = env('STATIC_ROOT')
+STATIC_URL = env('STATIC_URL')
 
 # logging
 LOGGING = {
