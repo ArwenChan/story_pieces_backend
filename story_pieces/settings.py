@@ -167,7 +167,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_THROTTLE_RATES': {
         'sms': '1/min',
-        'default': '20/min',
+        'default': '60/min',
     }
 }
 
@@ -208,7 +208,7 @@ REDIS_PORT = env('REDIS_PORT')
 REDIS_DB = env('REDIS_DB')
 REDIS_PASSWORD = env('REDIS_PASSWORD')
 
-CACHE_EXPIRE = 3 * 60 * 60
+CACHE_EXPIRE = 10 * 60
 
 CACHES = {
     "default": {
