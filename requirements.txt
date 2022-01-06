@@ -8,7 +8,7 @@ mock==2.0.0
 redis==2.10.6
 django-redis==4.10.0
 sentry-sdk==0.5.5
-celery==4.2.1
+celery==5.2.2
 django-environ==0.4.5
 django-cors-headers==2.4.0
 qiniu==7.1.0
